@@ -36,23 +36,13 @@ passport.use(
   })
 );
 
-passport.use(
+/*passport.use(
   new InstagramStrategy({
     clientID: keys.instagramClientId,
     clientSecret: keys.instagramClientSecret,
     callbackURL: '/auth/instagram/callback'
   }, (accessToken, refreshToken, profile, done) => {
-    /*User.findOne({ googleId: profile.id })
-      .then((existingUser) => {
-        if (existingUser) {
-          done(null, existingUser);
-        }
-        else {
-          new User({googleId: profile.id}).save()
-            .then(user => done(null, user));
-        }
-      })*/
       console.log("accessToken=",accessToken);
       console.log("profile=", profile);
   })
-);
+);*/
